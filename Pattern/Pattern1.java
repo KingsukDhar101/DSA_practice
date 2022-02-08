@@ -18,6 +18,9 @@ public class MyClass {
         pattern13(n);
         pattern14(n);
         pattern15(n);
+        pattern16(n);
+        pattern17(n);
+        // pattern18(n);
         
     }
     public static void pattern1(int n){
@@ -344,4 +347,43 @@ public class MyClass {
         }
         System.out.println();
     }
+    public static void pattern16(int n){
+        System.out.println("Q16. Pattern-16 : ");
+        int space = n-1;
+        for(int i=0; i<n; i++){
+            System.out.print("\t\t\t\t\t");
+            // // space
+            // for(int sp=1; sp<=space; sp++){
+            //     System.out.print("\t");
+            // }
+            int icj = 1;
+            for(int j=0; j<=i; j++){
+                System.out.print(icj+"\t");
+                int icjp1 = icj * (i-j)/(j+1);
+                icj = icjp1;
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern17(int n){
+        System.out.println("Q17. Pattern-17 : ");
+        int space = n-1;
+        for(int i=0; i<n; i++){
+            System.out.print("\t\t\t\t");
+            // space
+            for(int sp=1; sp<=space; sp++){
+                System.out.print("\t");
+            }
+            int icj = 1;
+            for(int j=0; j<=i; j++){
+                System.out.print(icj+"\t\t");
+                int icjp1 = icj * (i-j)/(j+1);
+                icj = icjp1;
+            }
+            System.out.println();
+            space--;
+        }
+    }
+    
+    
 }
