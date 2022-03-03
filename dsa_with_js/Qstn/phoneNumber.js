@@ -13,4 +13,19 @@ function printfunc() {
     }
   }
 }
-printfunc();
+// printfunc();
+
+function printfunc2(){
+  for(let i=0; i<=9; i++){
+    let count = 0;
+    for(let d of phone){
+      if(i == d){
+        count++;
+      }
+    }
+    if(count > 0){
+      console.log(`${i}, ${count}`);
+    }
+  }
+}
+printfunc2();
